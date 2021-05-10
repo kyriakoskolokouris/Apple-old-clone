@@ -1,10 +1,155 @@
 /* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: Helvetica, Neue Helvetica, sans-serif, Arial;
+  box-sizing: border-box;
+}
 
 /* HEADER */
 
+.nav-bar {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  min-width: 80%;
+  height: 38px;
+  margin: auto;
+  background: rgb(95, 99, 100);
+  background: linear-gradient(
+    0deg,
+    rgb(77, 79, 80) 52%,
+    rgb(188, 201, 211) 100%
+  );
+  border-radius: 12px;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.menu-items:hover {
+  background: linear-gradient(
+    0deg,
+    rgb(89, 92, 94) 52%,
+    rgba(176, 184, 190, 1) 100%
+  );
+  color: rgb(221, 210, 210);
+  border-radius: 8px;
+}
+
+.menu-items {
+  width: 100%;
+  height: 100%;
+  color: silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid rgb(117, 114, 114);
+  cursor: pointer;
+}
+
+#logo {
+  width: 18px;
+}
+
+input {
+  color: transparent;
+  border-radius: 20px;
+  min-width: 100px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px;
+  margin: 5px 10px;
+}
+
+.input-image {
+  height: 12px;
+  position: absolute;
+  top: 30%;
+  left: 85%;
+  right: 14%;
+  bottom: 70%;
+}
 
 /* MAIN */
+main {
+  background: url("images/your_verse_hero.jpg") 100% 90% no-repeat;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: rgba(247, 240, 240, 0.788);
+}
+
+h1 {
+  font-size: 40px;
+  padding: 220px 200px 30px 150px;
+}
+
+h2 {
+  font-size: 20px;
+  padding: 40px;
+}
+
+h3 {
+  font-size: 20px;
+  padding: 10px 0 90px 0;
+}
+
+.breaking {
+  display: block;
+  padding: 5px;
+}
 
 /* FLEX-AREA */
 
+.flex-area {
+  display: flex;
+}
+
+.flex-img {
+  width: 25%;
+}
 /* FOOTER */
+footer {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left-foot {
+  padding: 10px 10px;
+}
+
+.left-foot a,
+.right-foot a {
+  color: #0b7f9c;
+  text-decoration: none;
+}
+
+.right-foot {
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.right-foot-items {
+  margin-bottom: 22px;
+  padding: 0 5px;
+  border-right: 1px solid rgb(202, 202, 202);
+}
+
+.flag {
+  width: 15px;
+  border-radius: 50%;
+  border: none;
+  padding: 0 5px;
+}
